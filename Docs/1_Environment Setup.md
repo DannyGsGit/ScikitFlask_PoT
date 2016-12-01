@@ -24,7 +24,7 @@ The following instructions install Flask in a virtual environment in Python 3.4+
 `$ python -m venv scikit_flask_env`
 * You should now see a new directory at *C:\Python35\Environments\scikit_flask_env* containing multiple sub-directories and files. This is your virtual environment.
 
-### Activating the Virtual Environments
+### 2.2 Activating the Virtual Environments
 
 To work in a virtual environment, we will *activate* the environment.
 
@@ -43,7 +43,7 @@ $ deactivate
 ```
 When deactivated, the parenthetical environment name should disappear from the CMD prompt line.
 
-### 2.2 Adding environment assets
+### 2.3 Adding environment assets
 
 * We must first run an update on pip before proceeding with environment configuration: </br>
 `$ python -m pip install --upgrade pip`
@@ -69,7 +69,7 @@ After installing Numpy+MKL, download the scipy wheel (http://www.lfd.uci.edu/~go
 * We now have a virtual environment containing the package dependencies for this project, in isolation from the system-level Python installation. We can view the environment packages using a pip freeze command: </br>
 `$ pip freeze`
 
-### Adding project assets
+### 2.4 Adding project assets
 
 We will want to add our project files as a subdirectory of our environment. The purpose of this heirarchy is to limit the scope of our source control scheme to only include code we've generated- the environment we just created, with no custom code yet, is already 450MB in size.
 
