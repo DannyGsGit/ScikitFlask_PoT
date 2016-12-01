@@ -1,4 +1,4 @@
-# PTN_Demo
+# Setting Up a Python Environment
 Getting up &amp; running with a Python-Flask environment
 
 ## 1. Python Installation
