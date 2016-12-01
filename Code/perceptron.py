@@ -110,3 +110,21 @@ plt.show()
 
 
 
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#### Pickle Out Perceptron ####
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+import pickle
+import os
+
+# Define the model path and create the directory if it doesn't exist
+dest = os.path.join('Code', 'Models')
+if not os.path.exists(dest):
+    os.makedirs(dest)
+
+pickle.dump(ppn,
+            open(os.path.join(dest, 'iris_perceptron.pkl'), 'wb'),
+            protocol = 4)
+
+
