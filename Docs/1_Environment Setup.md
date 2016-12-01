@@ -69,6 +69,8 @@ After installing Numpy+MKL, download the scipy wheel (http://www.lfd.uci.edu/~go
 * We now have a virtual environment containing the package dependencies for this project, in isolation from the system-level Python installation. We can view the environment packages using a pip freeze command: </br>
 `$ pip freeze`
 
+> Note: Some IDEs, like Yhat Rodeo, need to be installed from within an environment to work inside. Pay careful attention to which environment your IDE is working against when coding!
+
 ### 2.4 Adding project assets
 
 We will want to add our project files as a subdirectory of our environment. The purpose of this heirarchy is to limit the scope of our source control scheme to only include code we've generated- the environment we just created, with no custom code yet, is already 450MB in size.
@@ -77,4 +79,7 @@ For this demo, we can simply create a project folder at *C:\Python35\Environment
 
 To ensure that the specifics of the environment are captured with the project code in our Git repository, we can use `$ pip freeze > package_versions.txt` to generate a text file containing all environment dependencies.
 
-> Note: Some IDEs, like Yhat Rodeo, need to be installed from within an environment to work inside. Pay careful attention to which environment your IDE is working against when coding!
+### 3 Addendum: Re-creating an environment
+
+One benefit of creating a package version file with pip freeze is the ability to re-build an *identical* version of the environment (same packages and versions) using the file. For example, rebuilding using our *package_versions.txt* file is executed with the following command: </br>
+`$ pip install -r package_versions.txt`
