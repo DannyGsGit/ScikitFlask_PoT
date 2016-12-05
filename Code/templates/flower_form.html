@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Iris Classification</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+
+<h2>Please enter flower dimesions, comma separated, no space:</h2>
+
+{% from "_formhelpers.html" import render_field %}
+
+<form method=post action="/results">
+  <dl>
+	{{ render_field(form.flowerdimensions, cols='10', rows='1') }}
+  </dl>
+  <div>
+	  <input type=submit value='Submit Dimensions' name='submit_btn'>
+  </div>
+</form>
+
+  </body>
+</html>

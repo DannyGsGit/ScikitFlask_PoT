@@ -30,4 +30,7 @@ iris_model = pickle.load(open(os.path.join('Code', 'Models', 'iris_perceptron.pk
 #### Run a prediction ####
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-iris_model.predict([5, 1])
+document = "5,1"
+X = str.split(document, ",")
+X = list(map(float, X))
+y = iris_model.predict(X)
