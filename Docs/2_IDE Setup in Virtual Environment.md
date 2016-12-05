@@ -2,7 +2,7 @@
 
 This section describes how to setup an IDE (Yhat Rodeo) to run inside a virtual environment.
 
-## 1 Rodeo IDE Configuration
+## 1. Rodeo IDE Configuration
 
 * We will use Yhat Rodeo for this exercise, available here:
 https://www.yhat.com/products/rodeo
@@ -27,4 +27,4 @@ $ activate
 [[[[PREFERENCES SCREENSHOT]]]]
 * In the Python preferences pane, update the *Python Command* field to the virtual environment Python path.
 [[[[SCREENSHOT PYTHON PATH]]]]
-* Rodeo will now work from within your virtual environment. 
+* Rodeo will now work from within your virtual environment.

@@ -3,7 +3,6 @@
 #~~~~~~~~~~~~~~~~~~~~~~~~
 
 import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
 import os
 import pickle
@@ -31,4 +30,4 @@ iris_model = pickle.load(open(os.path.join('Code', 'Models', 'iris_perceptron.pk
 #### Run a prediction ####
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-iris_model.predict([6, 4])
+iris_model.predict([5, 1])

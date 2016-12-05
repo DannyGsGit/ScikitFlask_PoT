@@ -79,7 +79,7 @@ For this demo, we can simply create a project folder at *C:\Python35\Environment
 
 To ensure that the specifics of the environment are captured with the project code in our Git repository, we can use `$ pip freeze > package_versions.txt` to generate a text file containing all environment dependencies.
 
-### 3 Addendum: Re-creating an environment
+## 3. Addendum: Re-creating an environment
 
 One benefit of creating a package version file with pip freeze is the ability to re-build an *identical* version of the environment (same packages and versions) using the file. For example, rebuilding using our *package_versions.txt* file is executed with the following command: </br>
 `$ pip install -r package_versions.txt`
