@@ -57,6 +57,7 @@ When deactivated, the parenthetical environment name should disappear from the C
 ```
 $ cd C:\Python35\Environments\scikit_flask_env\Scripts
 $ pip install flask
+$ pip install requests
 $ pip install numpy
 $ pip install scipy
 $ pip install scikit-learn
